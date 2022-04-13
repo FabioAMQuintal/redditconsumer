@@ -32,7 +32,7 @@ const Home = () => {
   if (isLoading) {
     return (
       <div>
-        {Array(getRandomNumber(3, 10)).fill(<PostLoading />)}
+        {/*Array(getRandomNumber(3, 10)).fill(<PostLoading />)*/}
       </div>
     );
   }

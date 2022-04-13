@@ -2,19 +2,19 @@ import React from 'react';
 import './App.css';
 import Home from './features/Home/Home';
 import Header from './features/Header/Header';
-import Subreddits from './app/subRedditSlice';
+import Subreddits from './features/SubReddits/SubReddits';
 
 function App() {
   return (
-    <>
+    <div>
       <Header />
       <main>
         <Home />
       </main>
       <aside>
-        <Subreddits />
+        
       </aside>
-    </>
+    </div>
   );
 }
 

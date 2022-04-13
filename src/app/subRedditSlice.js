@@ -6,7 +6,7 @@ const initialState = {
   error: false,
   isLoading: false,
 };
-
+console.log('oi')
 const subRedditSlice = createSlice({
   name: 'subreddits',
   initialState,
@@ -44,5 +44,6 @@ export const fetchSubreddits = () => async (dispatch) => {
     dispatch(getSubredditsFailed());
   }
 };
+
 
 export const selectSubreddits = (state) => state.subreddits.subreddits;

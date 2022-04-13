@@ -18,10 +18,6 @@ const Post = (props) => {
   const [voteValue, setVoteValue] = useState(0);
 
   const { post, onToggleComments } = props;
-
-  /**
-   * @param {number} newValue The new vote value
-   */
   const onHandleVote = (newValue) => {
     if (newValue === voteValue) {
       setVoteValue(0);
